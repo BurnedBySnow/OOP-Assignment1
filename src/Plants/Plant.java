@@ -13,4 +13,8 @@ public abstract class Plant implements PlantInterface {
         this.type = type;
         this.height = height;
     }
+
+    public String getName(){
+        return name;
+    }
 }

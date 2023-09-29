@@ -21,7 +21,7 @@ public class Hotel {
         this.carnivorousPlantList = new ArrayList<>();
         this.cactusList = new ArrayList<>();
     }
-    
+
     public void addToList(Plant plant) {
         this.plantList.add(plant);
     }
