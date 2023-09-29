@@ -13,4 +13,9 @@ public class CarnivorousPlant extends Plant implements PlantInterface {
     public String calculateNourishment() {
         return String.format("%.2f litre of " + Nourishment.Protein.nourishment, 0.1 + (0.2 * this.height));
     }
+
+    @Override
+    public String getName() {
+        return this.name;
+    }
 }

@@ -13,4 +13,9 @@ public class Cactus extends Plant implements PlantInterface {
     public String calculateNourishment() {
         return "2 centilitres of " + Nourishment.MineralWater.nourishment;
     }
+
+    @Override
+    public String getName() {
+        return this.name;
+    }
 }
