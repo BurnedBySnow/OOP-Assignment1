@@ -1,5 +1,5 @@
 package Interfaces;
 
 public interface PlantInterface {
-    String calculateNourishment();
+    String calculateNourishment(); // return nourishment information
 }

@@ -1,13 +1,14 @@
 package Plants;
 
+import Enums.Nourishment;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class PalmTest {
 
-    public Palm palm = new Palm("TestPalm", 5);
-    public Palm palm2 = new Palm("TestPalm2", 1);
+    public Palm palm = new Palm("TestPalm", 5, Nourishment.Water);
+    public Palm palm2 = new Palm("TestPalm2", 1, Nourishment.Water);
 
     @Test
     void calculateNourishmentTest() {

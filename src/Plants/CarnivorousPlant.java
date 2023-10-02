@@ -2,15 +2,15 @@ package Plants;
 
 import Enums.Nourishment;
 import Enums.Type;
-import Interfaces.PlantInterface;
 
-public class CarnivorousPlant extends Plant implements PlantInterface {
-    public CarnivorousPlant(String name, float height) {
-        super(Type.Carnivorous, name, height);
+// inherits from Plant
+public class CarnivorousPlant extends Plant {
+    public CarnivorousPlant(String name, float height, Nourishment nourishment) {
+        super(Type.Carnivorous, name, height, nourishment);
     }
 
     @Override
     public String calculateNourishment() {
-        return String.format("%.2f litre of " + Nourishment.Protein.nourishment, 0.1 + (0.2 * this.height));
+        return String.format("%.2f litre of " + nourishment.string, 0.1 + (0.2 * this.height));
     }
 }

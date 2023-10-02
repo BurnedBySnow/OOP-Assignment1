@@ -1,5 +1,6 @@
 package Plants;
 
+import Enums.Nourishment;
 import org.junit.jupiter.api.Test;
 
 import java.text.DecimalFormat;
@@ -7,7 +8,7 @@ import java.text.DecimalFormat;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CarnivorousPlantTest {
-    public CarnivorousPlant carnivorousPlant = new CarnivorousPlant("Test", 0.7f);
+    public CarnivorousPlant carnivorousPlant = new CarnivorousPlant("Test", 0.7f, Nourishment.Protein);
     private final DecimalFormat f = new DecimalFormat("0.00");
 
     @Test

@@ -5,9 +5,9 @@ public enum Nourishment {
     Protein ("protein drink"),
     MineralWater ("mineral water");
 
-    public final String nourishment;
+    public final String string;
 
-    Nourishment(String nourishment) {
-        this.nourishment = nourishment;
+    Nourishment(String string) {
+        this.string = string;
     }
 }
