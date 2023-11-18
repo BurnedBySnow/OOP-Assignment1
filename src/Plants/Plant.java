@@ -22,4 +22,8 @@ public abstract class Plant implements PlantInterface {
     public String getName(){
         return name;
     }
+
+    public void setHeight(float height) {
+        this.height = height;
+    }
 }

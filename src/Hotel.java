@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Hotel {
     private final List<Plant> plantList;
+    private String test;
 
     public Hotel() {
         plantList = new ArrayList<>();
