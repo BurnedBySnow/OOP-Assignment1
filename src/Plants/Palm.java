@@ -11,6 +11,6 @@ public class Palm extends Plant {
 
     @Override
     public String calculateNourishment() {
-        return (0.5 * this.height) + " litres of " + nourishment.string;
+        return String.format("%.2f litre of " + nourishment.string, (0.5 * this.height));
     }
 }
